@@ -78,7 +78,27 @@ body {
     color: #424242;
 }
 
+@media screen and (max-width: 576px) {
+    .nav-container {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
 
+    .nav-title h2 {
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    .nav-container ul {
+        flex-direction: column;
+        font-weight: ;
+        font-size: 1rem;
+        gap: 30px;
+
+    }
+
+}
 
 /*------ end nav bar style ------ */
 
@@ -110,6 +130,10 @@ body {
     margin-top: 40px;
     margin-bottom: 20px;
 }
+
+
+
+
 
 /*----------------------------- strt quick style ------------------- */
 
@@ -145,6 +169,23 @@ body {
     color: #FF900E;
 }
 
+@media screen and (max-width: 576px) {
+    .quick {}
+
+    .quick-container {
+        flex-direction: column;
+    }
+
+    .quick-photos {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 12px;
+    }
+
+    .quick-info {
+        text-align: center;
+    }
+}
+
 /*------ end quick style ----*/
 
 /*----------------------------- start love style ----------------------- */
@@ -175,7 +216,7 @@ body {
 }
 
 .info-box {
-    max-width: 400px;
+    max-width: 90%;
     height: 135px;
     padding: 18px;
     background: #FFFFFF;
@@ -217,6 +258,37 @@ body {
 
 .year-description {
     font-size: smaller;
+}
+
+@media screen and (max-width: 576px) {
+    .love {
+        margin: 50px auto;
+    }
+
+    .love-container {
+        flex-direction: column;
+    }
+
+    .love-info {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .info-box{
+        height: auto;
+    }
+
+    .love-photo img {
+        width: 100%;
+        height: auto;
+    }
+
+    .year {
+        position: relative;
+        margin-bottom: ;
+    }
+
 }
 
 /*------- end love style ---- */
@@ -267,6 +339,25 @@ body {
     color: #727272;
 }
 
+@media screen and (max-width: 576px) {
+    .facts {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .facts-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: ;
+    }
+
+    .f-c-box {
+        margin-top: 20px;
+    }
+
+}
+
 /*-------- end facts style ------- */
 
 
@@ -285,8 +376,15 @@ body {
     gap: 15px;
     filter: saturate(10%);
 }
-.sponspors-box img{
+
+.sponspors-box img {
     height: 36px;
+}
+
+@media screen and (max-width: 576px) {
+    .sponspors-container {
+        flex-direction: column;
+    }
 }
 
 
@@ -294,7 +392,7 @@ body {
 
 /*--------------------------------start footer style ----------------- */
 
-.f-container {
+.footer-container {
     display: flex;
     justify-content: center;
     height: 60px;
@@ -302,12 +400,15 @@ body {
     border-radius: 8px;
     align-items: center;
     margin-bottom: 150px;
+    text-align: center;
 }
 
 .footer-title {
     font-weight: 400;
     font-size: 13px;
     color: #424242;
+    padding: 5px;
 }
 
 /*---- end footer style ---- */
+
