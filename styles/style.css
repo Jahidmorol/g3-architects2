@@ -283,7 +283,10 @@ body {
     align-items: center;
     margin-top: 40px;
     gap: 15px;
-    filter: brightness(20%)
+    filter: saturate(10%);
+}
+.sponspors-box img{
+    height: 36px;
 }
 
 
