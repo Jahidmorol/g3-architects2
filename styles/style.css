@@ -1,4 +1,20 @@
-/*--- common style --- */
+
+/*------- font ---- */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&family=Poppins:wght@200;400;600;700;800&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+/*------------ start common style ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+
 body {
     font-family: 'Work Sans', sans-serif;
 }
@@ -13,13 +29,6 @@ body {
     width: 80%;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
-}
 
 .btn {
     width: 165px;
@@ -32,7 +41,7 @@ body {
     border: none;
 }
 
-.btn:hover{
+.btn:hover {
     transform: scale(1.1);
 }
 
@@ -60,13 +69,10 @@ body {
     }
 }
 
-/*------- font ---- */
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&family=Poppins:wght@200;400;600;700;800&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/*----- end common style---- */
 
 
 /* -------------------start nav bar style ---------------- */
-
 
 
 .nav-container {
@@ -91,11 +97,12 @@ body {
     font-size: 10px;
 
 }
-.nav-container ul list a{
+
+.nav-container ul li a {
     color: #424242;
 }
 
-.nav-container ul :hover{
+.nav-container ul :hover {
     transform: scale(1.1);
     color: #FF900E;
 }
@@ -114,9 +121,9 @@ body {
 
     .nav-container ul {
         flex-direction: column;
-        font-weight: ;
         font-size: 1rem;
-        gap: 30px;
+        gap: 35px;
+        margin: 20px 0;
 
     }
 
@@ -271,7 +278,7 @@ body {
     margin: auto;
 }
 
-.year:hover{
+.year:hover {
     transform: scale(1.1);
 }
 
@@ -366,9 +373,10 @@ body {
         grid-template-columns: repeat(1, 1fr);
         gap: 12px;
     }
+
     .projects-photos img {
         height: 300px;
-    }   
+    }
 
     .projects-info {
         text-align: center;
@@ -413,7 +421,7 @@ body {
 
 .f-c-box:hover {
     transform: scale(1.1);
-    background:#FF900E ;
+    background: #FF900E;
     filter: saturate(90%);
 }
 
@@ -464,7 +472,7 @@ body {
     align-items: center;
     margin-top: 40px;
     gap: 15px;
-    filter: saturate(10%);
+    filter: saturate(2%);
 }
 
 .sponspors-box img {
